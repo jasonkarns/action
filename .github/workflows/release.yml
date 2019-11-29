@@ -1,0 +1,11 @@
+on:
+  push:
+    tags: 'v*'
+      # - 'v*'
+      # - '!*-*' # skip prereleases
+
+jobs:
+  yeah:
+    runs-on: ubuntu-latest
+    steps:
+      - run: printenv
